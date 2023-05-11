@@ -16,7 +16,7 @@ late Future<News> futureNews;
 final AuthService _auth = AuthService();
 TextEditingController _searchController = TextEditingController();
 String? search;
-const _apiKey = '6d7276c81a1043f18c998ce2da1a7713';
+const _apiKey = 'apiKey';
 
 Future<News> fetchNews(String? value) async {
   final response = await http.get(Uri.parse(
