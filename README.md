@@ -23,3 +23,7 @@ samples, guidance on mobile development, and a full API reference.
     5. shared_preferences: ^2.1.1 - Save data locally on the device like previous login detalis.
     6. email_validator: ^2.1.17 - validator to check email.
     7. http: ^0.13.6 - flutter package to parse news api using get method.
+
+- Demo Video
+https://github.com/gurpreetachint/SocialX/assets/60965306/5ab81ceb-a6aa-4a1c-9af8-7f82b46f7e11
+
