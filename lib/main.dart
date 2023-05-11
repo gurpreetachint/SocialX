@@ -2,6 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:socialx/screens/authentication/login_card.dart';
+import 'package:socialx/screens/authentication/signup_card.dart';
 
 import 'screens/wrapper.dart';
 import 'services/auth.dart';
@@ -17,6 +19,10 @@ class SocialX extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      routes: {
+        '/signup' : (context) => const SignupCard(),
+        '/login' : (context) => const LoginCard(),
+      },
       theme: ThemeData(
           appBarTheme: const AppBarTheme(
         backgroundColor: Color.fromRGBO(255, 0, 0, 1),

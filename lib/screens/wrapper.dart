@@ -30,7 +30,6 @@ class _WrapperState extends State<Wrapper> {
       // ignore: unrelated_type_equality_checks
       home: const Authenticate(),
       routes: {
-        // 'doctorregistration': (context) => const DoctorRegistrationPage(),
         'home': (context) =>  const Home(),
         
         

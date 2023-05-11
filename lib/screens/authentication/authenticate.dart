@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'login.dart';
-import 'signup.dart';
+import 'package:socialx/screens/authentication/active_screen.dart';
+import 'package:socialx/screens/authentication/login_card.dart';
+import 'package:socialx/screens/authentication/signup_card.dart';
 
 
 class Authenticate  extends StatefulWidget{
@@ -20,10 +20,8 @@ class _AuthenticateState extends State<Authenticate> {
   }
   @override
   Widget build(BuildContext context) {
-    return showLogin? const LoginPage(
-      // onHarkt: changeScreen,
-    ): const SignupPage(
-      // onHarkt: changeScreen,
+    return showLogin?  const ActiveScreen( activeClass: LoginCard(),
+    ): const SignupCard(
     );
   }
 }
